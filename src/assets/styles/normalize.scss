@@ -1,0 +1,53 @@
+/*
+  1. 使用border-box，避免出现意料之外的内容溢出
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. 去除默认的外边距，内边距
+  */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  /*
+    3. html,body固定宽高
+  */
+  html,body{
+    width: 1920px;
+    height: 1080px;
+    background-color: var(--bg);
+  }
+  /*
+    4. 增加可读性
+    5. 苹果端提供更好的文字表现
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+  /*
+    6. 提供基本的媒体样式
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. 去除以下元素的内置文字样式
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. 避免文字溢出
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  a{
+    text-decoration: none;
+  }

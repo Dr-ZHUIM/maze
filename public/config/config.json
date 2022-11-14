@@ -1,0 +1,13 @@
+{   
+    "level":{
+        "easy" : 25,
+        "normal" : 35,
+        "hard" : 45
+    },
+    "color":{
+        "wall" : "#000000",
+        "path" : "#ffffff",
+        "entrance" : "yellow",
+        "exit" : "green"
+    }
+}
